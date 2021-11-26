@@ -2,4 +2,4 @@
 
 require 'faraday'
 r = Faraday.get 'https://gb.ru/courses'
-p r.body.lines.count
+puts r.body.lines.count
