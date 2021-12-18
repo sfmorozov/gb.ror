@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
-##
-#
-
-def year(y)
-  @y = y
-  x = y.to_s[-1].to_i
+def year(year)
+  @year = year
+  x = year.to_s[-1].to_i
   case x
   when 1
     'год'

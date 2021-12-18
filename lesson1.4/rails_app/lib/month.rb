@@ -1,14 +1,12 @@
 # frozen_string_literal: true
 
-##
-#
-def month(m)
-  @m = m
-  case m
+def month(month)
+  @month = month
+  case month
   when (10..12)
     return 'месяцев'
   end
-    x = m.to_s[-1].to_i
+  x = month.to_s[-1].to_i
   case x
   when 1
     'месяц'
