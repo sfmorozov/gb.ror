@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 namespace :db do
-  desc 'Заполнение таблицы подпунктов тестовыми данными rails db:fill_items [Число экземпляров подпунктов])'
+  desc 'Заполнение таблицы Post тестовыми данными rails db:fill_posts [Число экземпляров подпунктов])'
   task :fill_posts, [:params] => :environment do |_t, args|
     args.with_defaults(params: 25)
     if User.all.ids.count.positive?
