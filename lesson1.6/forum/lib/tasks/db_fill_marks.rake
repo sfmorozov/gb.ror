@@ -2,8 +2,7 @@
 
 namespace :db do
   desc 'Заполнение таблицы событий тестовыми данными rails db:fill_marks)'
-  task :fill_marks => :environment do
-
+  task fill_marks: :environment do
     if Post.all.ids.count.positive? && User.all.ids.count.positive?
       (User.all.ids.count * Post.all.ids.count).times do
         Mark.create(
